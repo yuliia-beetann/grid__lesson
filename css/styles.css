@@ -1,0 +1,191 @@
+@import url("https://fonts.googleapis.com/css2?family=Nanum+Brush+Script&display=swap");
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: 'Nanum Brush Script', cursive, sans-serif;
+  font-size: 40px;
+  padding: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.wrapper {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "header header header" "sidebar block-left block-right" "sidebar main main" "footer footer footer";
+  -ms-grid-rows: 100px 1fr 2fr 100px;
+      grid-template-rows: 100px 1fr 2fr 100px;
+  -ms-grid-columns: 300px 1fr 1fr;
+      grid-template-columns: 300px 1fr 1fr;
+  width: 1140px;
+  height: 890px;
+}
+
+.header {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: header;
+  background: #d8d8d8;
+  padding: 10px 20px;
+  -ms-grid-columns: 100px 200px 1fr 200px;
+      grid-template-columns: 100px 200px 1fr 200px;
+  gap: 20px;
+  border: 1px solid gray;
+}
+
+.header__item {
+  background: #920000;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  border: 1px solid gray;
+}
+
+.header__item--right {
+  -ms-grid-column: 4;
+  grid-column: 4;
+}
+
+.sidebar {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 2;
+  -ms-grid-column: 1;
+  grid-area: sidebar;
+  -ms-grid-rows: 1fr 2fr 6fr;
+      grid-template-rows: 1fr 2fr 6fr;
+  background: #c8bfbf;
+  padding: 20px;
+  gap: 20px;
+  border: 1px solid gray;
+}
+
+.sidebar__item {
+  border: 1px solid gray;
+  background-color: #e4d9a0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.block-left {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-row: 2;
+  -ms-grid-column: 2;
+  grid-area: block-left;
+  -ms-grid-rows: (1fr)[12];
+      grid-template-rows: repeat(12, 1fr);
+  -ms-grid-columns: (1fr)[25];
+      grid-template-columns: repeat(25, 1fr);
+  background: #dedbce;
+  padding: 20px;
+  gap: 5px;
+  border: 1px solid gray;
+}
+
+.block-left__item {
+  background-color: black;
+}
+
+.block-right {
+  -ms-grid-row: 2;
+  -ms-grid-column: 3;
+  grid-area: block-right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background: #aca898;
+  border: 1px solid gray;
+}
+
+.main {
+  -ms-grid-row: 3;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 2;
+  grid-area: main;
+  background: #decece;
+  padding: 30px;
+  border: 1px solid gray;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-rows: (1fr)[5] 10px;
+      grid-template-rows: repeat(5, 1fr) 10px;
+  -ms-grid-columns: (1fr 2fr)[4];
+      grid-template-columns: repeat(4, 1fr 2fr);
+  gap: 10px;
+}
+
+.main__item {
+  background-color: #a0e4d4;
+  border: 1px solid gray;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.main__item--green {
+  -ms-grid-row: 3;
+  -ms-grid-row-span: 1;
+  grid-row: 3/4;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 3;
+  grid-column: 5/8;
+  background-color: #0f856a;
+}
+
+.main__item--long {
+  -ms-grid-row: 6;
+  -ms-grid-row-span: 1;
+  grid-row: 6/7;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 8;
+  grid-column: 1/9;
+}
+
+.footer {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  -ms-grid-column-span: 3;
+  grid-area: footer;
+  background: #d8d8d8;
+  height: 100px;
+  border: 1px solid gray;
+}
+/*# sourceMappingURL=styles.css.map */
